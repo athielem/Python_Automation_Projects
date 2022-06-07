@@ -4,12 +4,7 @@ from datetime import date, datetime
 from email.message import EmailMessage
 from urllib.request import urlopen
 
-<<<<<<< HEAD
 while True:
-=======
-status_variable = True
-while status_variable:
->>>>>>> 7a781f8088dfc039fa37c27c62c5ba2bf382c3fa
 
     now = datetime.now()
     current_time = now.strftime('%H:%M:%S')
@@ -60,19 +55,11 @@ while status_variable:
 
         msg = EmailMessage()
         msg['Subject'] = 'Artikel vom {}'.format(str_date_eu)
-<<<<<<< HEAD
         msg['To'] = '' 
         msg.set_content(html_str, subtype='html')
 
         with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
             smtp.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
-=======
-        msg['To'] = 'andreas.thiele@outlook.com' 
-        msg.set_content(html_str, subtype='html')
-
-        with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
-            smtp.login(EMAIL_ADDRESS, EMAIL_PASSWORD) 
->>>>>>> 7a781f8088dfc039fa37c27c62c5ba2bf382c3fa
             smtp.send_message(msg)
 
     else:
