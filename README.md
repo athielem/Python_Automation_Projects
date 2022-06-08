@@ -1,0 +1,1 @@
+I set up this repo to pursue different automation tasks with Python that are of professional interest to me to 1) help do away with time-intensive manual work and 2) display my proficiency with the programming language.
